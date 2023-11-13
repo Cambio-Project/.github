@@ -1,7 +1,7 @@
 # Cambio-Project
 
 # Goal
-The Cambio-Project encompasses a collection of tools designed for Chaos Engineering. It places special focus on transient behavior 
+The Cambio-Project encompasses a collection of tools designed for Chaos Engineering. Its purpose is simulating and analysing the transient behavior of a microservice systems in resilience scenarios.
 
 ## Overview
 
