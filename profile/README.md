@@ -20,3 +20,54 @@ The  DiSpel components are eight tools with different responsibilites.
 | [RESIRO](https://github.com/Cambio-Project/hazard-elicitation)   |  RESIRIO is a chatbot approach for helping developers to create resilience scenarios. |
 | [MiSim](https://github.com/Cambio-Project/MiSim)   | MiSim simulates a microservice system with customizable capacities, loadbalancing strategies, network delays and other real-world factors. |
 | [TBVerifier](https://github.com/Cambio-Project/transient-behavior-verifier)    | The TBVerifiers enables monitoring the transient behavior of a microservice system after the injection of an anomaly.
+
+# Code Guidelines
+We use comon code guideline standards for Java and Python. Additionaly we use a template for commit messages.
+
+## Python
+- PEP 8: The Style Guide for Python Code (https://pep8.org/)
+- The Hitchhikers Guide to Python (https://docs.python-guide.org/writing/style/#we-are-all-responsible-users)
+
+## Java
+- Oracle: Code Conventions for the Java Programming Language (https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)
+- Alibaba: Java  Coding Guidelines Alibaba Java Coding Guidelines (only chapter 1+2!) (https://alibaba.github.io/Alibaba-Java-Coding-Guidelines/)
+
+## Commits
+- Conventional Commits (https://www.conventionalcommits.org/en/v1.0.0/)
+- Committing Code Guidelines [CommittingCodeGuidlines.pdf](https://github.com/Cambio-Project/.github/files/13424983/CommittingCodeGuidlines.pdf)
+
+Template
+```
+# Title: Summary, imperative, start upper case, don't end with a period
+# No more than 50 chars. #### 50 chars is here:  #
+
+# Remember blank line between title and body.
+
+# Body: Explain *what* and *why* (not *how*). Include issue ID.
+# Wrap at 72 chars. ################################## which is here:  #
+
+# At the end: Include Co-authored-by for all contributors. 
+# Include at least one empty line before it. Format: 
+# Co-authored-by: name <user@users.noreply.github.com>
+#
+# How to Write a Git Commit Message:
+# https://chris.beams.io/posts/git-commit/
+#
+# 1. Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#       new file:   installation.md
+```
+
