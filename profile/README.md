@@ -1,25 +1,37 @@
 # Cambio-Project
 
 # Goal
-The Cambio-Project encompasses a collection of tools designed for Chaos Engineering. Its purpose is simulating and analysing the transient behavior of a microservice systems in resilience scenarios.
+The Cambio-Project encompasses a collection of (mostly standalone) tools designed for Chaos Engineering. Its purpose is simulating and analyzing the transient behavior of a microservice systems in resilience scenarios. Some of these tools have been integrated into a Chaos Engineering approach called *DiSpel Approach* which is detailed in the following.
 
 ## Overview
 
-![dispel_overview](https://github.com/Cambio-Project/.github/assets/77619091/9767110d-0b95-44df-9b2c-3a52e8e32bcf)
+<img width="960" alt="dispeloverview" src="https://github.com/Cambio-Project/.github/assets/18191871/1131d3b4-c1f5-4185-b2bc-33d8225c5f30">
 
-
-The  DiSpel components are eight tools with different responsibilites.
+The **DiSpel components** are currently six tools with different responsibilites.
 
 | **Component** | **Short Description** |
 |---------------|-----------------------|
-| [TransVis frontend](https://github.com/Cambio-Project/conversational-transient-behavior-visualization-backend/tree/master) & [TransVis backend](https://github.com/Cambio-Project/conversational-transient-behavior-visualization-frontend/tree/master)  | TransVis visualizes the transient behavior (i.e. QoS over time) of a microservice system. Additionally offers a chatbot for interactive analysis. |
-| [TQPropRefiner](https://github.com/Cambio-Project/transient-behavior-requirement-refiner)   | The TQPropRefiner is a tool for the refinement of the temporal ocmponent of a generic PSP. |
-| [SAE Tool](https://github.com/Cambio-Project/software-architecture-extraction)   |  The SAE tool uses event traces of a microservice application to create an architectural model. |
-| [TL-Tea](https://github.com/Cambio-Project/TL-Tea)   | TL-Tea parses and converts LTL and MTL patterns into tree structures, that can be evaluated and improved. |
-| [PSP Wizard](https://github.com/Cambio-Project/PSPWizardExtended)   | The PSPWizard allows for the machine-assisted creation of Property Specification Patterns (PSPs). |
+| [DiSpel Cockpit](https://github.com/Cambio-Project/dispel-cockpit)   | The Cockpit provides a visual user interface and coordinates the other tools. It allows to store and manage scenarios and analysis results. |
+| [PSP Wizard](https://github.com/Cambio-Project/PSPWizardExtended)   | The PSPWizard allows for the machine-assisted creation of Property Specification Patterns (PSPs), which serve as stimuli and responses in scenarios. |
+| [MiSim](https://github.com/Cambio-Project/MiSim)   | MiSim simulates a microservice system with customizable capacities, loadbalancing strategies, network delays and other real-world (resilience) factors. Stimuli in the form of PSP can be interpreted by MiSim. |
+| [MoSIM](https://github.com/Cambio-Project/MoSIM)   | MoSIM searches in monitoring data for occurrences of stimuli specified as PSPs. |
+| [TBVerifier](https://github.com/Cambio-Project/transient-behavior-verifier)    | The TBVerifiers enables verifying the scenario satisfaction on collected system data through use of te underlying MTL solvers.
+| [TQPropRefiner](https://github.com/Cambio-Project/transient-behavior-requirement-refiner)   | The TQPropRefiner is a tool for the refinement of temporal components and metric parameters of a PSP. |
+
+The following tools are currently not integrated into the DiSpel process:
+
+| **Component** | **Short Description** |
+|---------------|-----------------------|
 | [RESIRO](https://github.com/Cambio-Project/hazard-elicitation)   |  RESIRIO is a chatbot approach for helping developers to create resilience scenarios. |
-| [MiSim](https://github.com/Cambio-Project/MiSim)   | MiSim simulates a microservice system with customizable capacities, loadbalancing strategies, network delays and other real-world factors. |
-| [TBVerifier](https://github.com/Cambio-Project/transient-behavior-verifier)    | The TBVerifiers enables monitoring the transient behavior of a microservice system after the injection of an anomaly.
+| [TransVis frontend](https://github.com/Cambio-Project/conversational-transient-behavior-visualization-backend/tree/master) & [TransVis backend](https://github.com/Cambio-Project/conversational-transient-behavior-visualization-frontend/tree/master)  | TransVis visualizes the transient behavior (i.e. QoS over time) of a microservice system. Additionally offers a chatbot for interactive analysis. |
+| [SAE Tool](https://github.com/Cambio-Project/software-architecture-extraction)   |  The SAE tool uses event traces of a microservice application to create an architectural model for MiSim. |
+
+The following libraries are no standalone tools but used as part of other DiSpel toling.
+
+| **Component** | **Short Description** |
+|---------------|-----------------------|
+| [TL-Tea](https://github.com/Cambio-Project/TL-Tea)   | TL-Tea parses and converts LTL and MTL formulas into tree structures and can act as a LTL/MTL solver that analyzers like MiSim and MoSIM interact with. |
+
 
 # Code Guidelines
 We use comon code guideline standards for Java and Python. Additionaly we use a template for commit messages.
