@@ -7,7 +7,7 @@ The Cambio-Project encompasses a collection of (mostly standalone) tools designe
 
 <img width="960" alt="dispeloverview" src="https://github.com/Cambio-Project/.github/assets/18191871/1131d3b4-c1f5-4185-b2bc-33d8225c5f30">
 
-The **DiSpel components** are currently six tools with different responsibilites.
+The **DiSpel components** are currently seven tools with different responsibilities.
 
 | **Component** | **Short Description** |
 |---------------|-----------------------|
@@ -15,8 +15,9 @@ The **DiSpel components** are currently six tools with different responsibilites
 | [PSP Wizard](https://github.com/Cambio-Project/PSPWizardExtended)   | The PSPWizard allows for the machine-assisted creation of Property Specification Patterns (PSPs), which serve as stimuli and responses in scenarios. |
 | [MiSim](https://github.com/Cambio-Project/MiSim)   | MiSim simulates a microservice system with customizable capacities, loadbalancing strategies, network delays and other real-world (resilience) factors. Stimuli in the form of PSP can be interpreted by MiSim. |
 | [MoSIM](https://github.com/Cambio-Project/MoSIM)   | MoSIM searches in monitoring data for occurrences of stimuli specified as PSPs. |
-| [TBVerifier](https://github.com/Cambio-Project/transient-behavior-verifier)    | The TBVerifiers enables verifying the scenario satisfaction on collected system data through use of te underlying MTL solvers.
+| [TBVerifier](https://github.com/Cambio-Project/transient-behavior-verifier)    | The TBVerifier enables verifying the scenario satisfaction on collected system data through use of te underlying MTL solvers. |
 | [TQPropRefiner](https://github.com/Cambio-Project/transient-behavior-requirement-refiner)   | The TQPropRefiner is a tool for the refinement of temporal components and metric parameters of a PSP. |
+| [PrometheusService](https://github.com/Cambio-Project/Prometheus-Service)   | The Prometheus Service receives experiment results and allows for detailed analysis. |
 
 The following tools are currently not integrated into the DiSpel process:
 
